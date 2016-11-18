@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace azureMock
 {
-    public class Class1
-    {
-    }
+	public class IMobileServiceTable
+	{
+		IMobileServiceTable()
+		{
+			
+		}
+	}
 }
