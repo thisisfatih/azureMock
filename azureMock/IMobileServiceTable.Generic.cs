@@ -37,6 +37,6 @@ namespace azureMock
 		IMobileServiceTableQuery<T> Skip ( int count );
 		IMobileServiceTableQuery<T> Take ( int count );
 		//IEnumerable<T> /*Task<IEnumerable<T>> ToEnumerableAsync ( );
-		Task<List<T>> ToListAsync ( List<T> returnList );
+		Task<List<T>> ToListAsync ( );
 	}
 }

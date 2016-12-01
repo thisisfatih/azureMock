@@ -221,11 +221,21 @@ namespace azureMock
 		//{
 		//	return this.ReadAsync ( );
 		//}
-		public async Task<List<T>> ToListAsync ( List<T> returnList )
+		public async Task<List<T>> ToListAsync ( )
 		{
-			return returnList;
+			if (returnList == null)
+			{
+				return null;
+			}
+			else
+			{
+				return returnList;
+			}
+
 			//return new QueryResultList<T> ( await this.ReadAsync ( ) );
 		}
+
+		public List<T> returnList;
 
 		//private async Task<JToken> TransformHttpException ( MobileServiceSerializer serializer, Func<Task<JToken>> action )
 		//{
